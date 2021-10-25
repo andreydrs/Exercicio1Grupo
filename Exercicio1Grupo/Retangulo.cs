@@ -13,14 +13,14 @@ namespace Exercicio1Grupo
 		public void Area()
 		{
 			double area = Largura * Altura;
-			Console.WriteLine("Area = {0}", area);
+			Console.WriteLine("Area = {0}", area.ToString("F2"));
 
 		}
 
         public void Perimetro()
 		{
 			double perimetro = Largura+Largura+Altura+Altura;
-			Console.WriteLine("Perimetro = {0}", perimetro);
+			Console.WriteLine("Perimetro = {0}", perimetro.ToString("F2"));
 
 		}
 
@@ -28,7 +28,7 @@ namespace Exercicio1Grupo
 		{
 			double diagonal = Math.Pow(Largura,2) + Math.Pow(Altura,2);
 			diagonal = Math.Sqrt(diagonal);
-			Console.WriteLine("Diagonal = {0}.N2", diagonal);
+			Console.WriteLine("Diagonal = {0}", diagonal.ToString("F2"));
 
 		}
 	}
